@@ -24,6 +24,9 @@ echo Download complete.
 echo Unzipping
 unzip -o /tmp/recyclarr.zip -d $recyclarr_location
 echo Unzip done.
+echo Removing recyclarr.zip from /tmp/
+rm /tmp/recyclarr.zip
+echo Done removing recyclarr.zip.
 echo Changing file permissions.
 chmod a+x $recyclarr_location/recyclarr
 echo Done with file permission.
