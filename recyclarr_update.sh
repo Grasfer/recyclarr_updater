@@ -10,7 +10,7 @@
 ### Change variables.
 recyclarr_location="/mnt/user/king_backup/devices/recyclarr"
 my_config_location="/mnt/user/king_backup/devices/recyclarr"
-my_config_name"my_config.yml"
+my_config_name="my_config.yml"
 config_location="/root/.config/recyclarr"
 config_name="recyclarr"
 
