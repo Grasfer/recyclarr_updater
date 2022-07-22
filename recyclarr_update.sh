@@ -30,7 +30,7 @@ rm -v /tmp/recyclarr.zip
 echo Done removing recyclarr.zip.
 echo
 echo Changing file permissions.
-chmod a+x $recyclarr_location/recyclarr
+chmod -v a+x $recyclarr_location/recyclarr
 echo Done with file permission.
 echo 
 echo Showing Recyclarr version.
