@@ -13,4 +13,4 @@ Make sure you have a profile called 1080p and/or 4K.
 
 
 
-inspiration config https://pastebin.com/raw/VgvMhDeZ
+##### inspiration config https://pastebin.com/raw/VgvMhDeZ
