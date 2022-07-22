@@ -17,33 +17,37 @@ config_name="recyclarr"
 ### End of variables.
 
 ### Downloads latest Recyclarr x64 Linux version.
-#wget --quiet -O /tmp/recyclarr.zip "https://github.com/recyclarr/recyclarr/releases/latest/download/recyclarr-linux-x64.zip"
 echo Downloading with WGET
 wget -O /tmp/recyclarr.zip https://github.com/recyclarr/recyclarr/releases/latest/download/recyclarr-linux-x64.zip
 echo Download complete.
+echo 
 echo Unzipping
 unzip -o /tmp/recyclarr.zip -d $recyclarr_location
 echo Unzip done.
+echo 
 echo Removing recyclarr.zip from /tmp/
-rm /tmp/recyclarr.zip
+rm -v /tmp/recyclarr.zip
 echo Done removing recyclarr.zip.
+echo
 echo Changing file permissions.
 chmod a+x $recyclarr_location/recyclarr
 echo Done with file permission.
+echo 
 echo Showing Recyclarr version.
 $recyclarr_location/recyclarr --version
-
+echo 
+echo 
 ### Copying recyclarr config.
 echo Copying config over.
 cp -v /mnt/user/king_backup/devices/recyclarr/my_config.yml /root/.config/recyclarr/recyclarr.yml
 echo Config copy done.
-
+echo 
 
 ### Updating Sonarr.
 echo Updating Sonarr.
 $recyclarr_location/recyclarr sonarr
 echo Done updating Sonarr.
-
+echo 
 ### Updaring Radarr.
 echo Updating Sonarr
 $recyclarr_location/recyclarr radarr
