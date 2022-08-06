@@ -49,6 +49,6 @@ $recyclarr_location/recyclarr sonarr
 echo Done updating Sonarr.
 echo 
 ### Updaring Radarr.
-echo Updating Sonarr
+echo Updating Radarr
 $recyclarr_location/recyclarr radarr
 echo Done updating Radarr.
