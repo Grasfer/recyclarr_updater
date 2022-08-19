@@ -36,10 +36,9 @@ echo
 echo Showing Recyclarr version.
 $recyclarr_location/recyclarr --version
 echo 
-### Creating folders.
+echo Creating folders.
 mkdir -v -p /root/.config/recyclarr/
-### Folders created.
-echo
+echo Folders created.
 echo 
 ### Copying recyclarr config.
 echo Copying config over.
