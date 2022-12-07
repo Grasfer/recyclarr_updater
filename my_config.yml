@@ -2,7 +2,7 @@
 sonarr:
     # Sonarr
   - base_url: http://192.168.5.150:8989
-    api_key: <change me>
+    api_key: !secret sonarr_apikey
 
     # Quality definitions from the guide to sync to Sonarr. Choice: anime, series, hybrid
     quality_definition: series
@@ -27,7 +27,7 @@ sonarr:
 radarr:
   # Radarr
   - base_url: http://192.168.5.150:7878
-    api_key: <change me>
+    api_key: !secret radarr_apikey
 
     # Which quality definition in the guide to sync to Radarr. Only choice right now is 'movie'
     quality_definition:
@@ -47,6 +47,7 @@ radarr:
           - 90cedc1fea7ea5d11298bebd3d1d3223 # EVO (no WEBDL)
           - 90a6f9a284dff5103f6346090e6280c8 # LQ
 #          - 9170d55c319f4fe40da8711ba9d8050d # x265
+          - dc98083864ea246d05a42df0d05f81cc # x265
           - b8cd450cbfa689c0259a01d9e29ba3d6 # 3D
           - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5 # No-RlsGroup
           - 7357cf5161efbf8c4d5d0c30b4815ee2 # Obfuscated
@@ -84,7 +85,7 @@ radarr:
 
     #Radarr4k
   - base_url: http://192.168.5.150:7879
-    api_key: <change me>
+    api_key: !secret radarr4k_apikey
 
     # Which quality definition in the guide to sync to Radarr. Only choice right now is 'movie'
     quality_definition:
