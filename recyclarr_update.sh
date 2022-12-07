@@ -42,7 +42,8 @@ echo Folders created.
 echo 
 ### Copying recyclarr config.
 echo Copying config over.
-cp -v /mnt/user/king_backup/devices/recyclarr/my_config.yml /root/.config/recyclarr/recyclarr.yml
+cp -v /mnt/user/king_backup/devices/recyclarr/sonarr.yml /root/.config/recyclarr/configs/sonarr.yml
+cp -v /mnt/user/king_backup/devices/recyclarr/radarr.yml /root/.config/recyclarr/configs/radarr.yml
 echo Config copy done.
 echo 
 
