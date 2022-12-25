@@ -18,11 +18,11 @@ config_name="recyclarr"
 
 ### Downloads latest Recyclarr x64 Linux version.
 echo Downloading with WGET
-wget -O /tmp/recyclarr.zip https://github.com/recyclarr/recyclarr/releases/latest/download/recyclarr-linux-x64.zip
+wget -O /tmp/recyclarr.tar.xz https://github.com/recyclarr/recyclarr/releases/download/v4.0.1/recyclarr-linux-x64.tar.xz
 echo Download complete.
 echo 
 echo Unzipping
-unzip -o /tmp/recyclarr.zip -d $recyclarr_location
+tar -xvf /tmp/recyclarr.tar.xz -C $recyclarr_location
 echo Unzip done.
 echo 
 echo Removing recyclarr.zip from /tmp/
