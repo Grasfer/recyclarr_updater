@@ -5,7 +5,9 @@ Run as sudo.
 # recyclarr.yml
 My recyclarr config.\
 Merged web-1080p-v4 with web-2160p-v4, that allows me to choose 1080p or 2160p series withing the same Sonarr instance.\
-Might merged radarr 1080p and 2160p instances later, maybe dont have to use two instasnces of radarr to download 1080p and 2160p ISOs then.
+Might merged radarr 1080p and 2160p instances later, maybe dont have to use two instasnces of radarr to download 1080p and 2160p ISOs then.\
+Think it works atleast, have not tested it for long (2024-06-01)\
+Just use profiles WEB-1080p or WEB-2160p.
 
 ## outdated, would be nice to cleanup and allow downloading settings from github.
 ### recyclarr_updater
