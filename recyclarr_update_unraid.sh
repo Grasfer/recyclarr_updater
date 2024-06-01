@@ -7,6 +7,16 @@
 # Updating Radarr
 
 
+
+### Somewhat outdated, would be nice to add downloading settings from github etc.
+### And alot of cleanup.
+
+
+
+
+
+
+
 ### Change variables.
 recyclarr_location="/mnt/user/king_backup/devices/recyclarr"
 my_config_location="/mnt/user/king_backup/devices/recyclarr"
