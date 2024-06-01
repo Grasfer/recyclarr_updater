@@ -1,5 +1,5 @@
 # recyclarr_download.sh
-Automatically download linux Reyclarr and installs it into /usr/local/bin.
+Automatically download linux Reyclarr and installs it into /usr/local/bin.\
 Run as sudo.
 
 # recyclarr.yml
