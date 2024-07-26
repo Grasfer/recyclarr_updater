@@ -5,6 +5,9 @@ sonarr:
     base_url: http://192.168.5.150:8989/
     api_key: <changeme>
 
+    delete_old_custom_formats: true
+    replace_existing_custom_formats: true
+
     include:
       # Comment out any of the following includes to disable them
       - template: sonarr-quality-definition-series
@@ -33,7 +36,7 @@ sonarr:
           - 82d40da2bc6923f41e14394075dd4b03 # No-RlsGroup
           - e1a997ddb54e3ecbfe06341ad323c458 # Obfuscated
           - 06d66ab109d4d2eddb2794d21526d140 # Retags
-          - 1b3994c551cbb92a2c781af061f4ab44 # Scene
+          # - 1b3994c551cbb92a2c781af061f4ab44 # Scene
         quality_profiles:
           - name: WEB-2160p
 #        quality_profiles:
@@ -55,8 +58,8 @@ sonarr:
       # SDR - block ALL SDR releases
       # SDR (no WEBDL) - block UHD/4k Remux and Bluray encode SDR releases, but allow SDR WEB
       - trash_ids:
-          - 2016d1676f5ee13a5b7257ff86ac9a93 # SDR
-          # - 83304f261cf516bb208c18c54c0adf97 # SDR (no WEBDL)
+          # - 2016d1676f5ee13a5b7257ff86ac9a93 # SDR
+          - 83304f261cf516bb208c18c54c0adf97 # SDR (no WEBDL)
         quality_profiles:
           - name: WEB-2160p
 
@@ -65,6 +68,9 @@ radarr:
   sqp-1-1080p:
     base_url: http://192.168.5.150:7878/
     api_key: <changeme>
+
+    delete_old_custom_formats: true
+    replace_existing_custom_formats: true
 
     quality_profiles:
       - name: SQP-1 (1080p)
@@ -98,6 +104,8 @@ radarr:
     base_url: http://192.168.5.150:7879/
     api_key: <changeme>
 
+    delete_old_custom_formats: true
+    replace_existing_custom_formats: true
     include:
       # Comment out any of the following includes to disable them
       - template: radarr-quality-definition-sqp-uhd
